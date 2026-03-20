@@ -3,34 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
     <title>Musicageddon</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Musicageddon</a></li>
-          <li><a href="categories/chords.html">Аккорди</a></li>
-          <li><a href="categories/scales.html">Гами</a></li>
-          <li><a href="tools/notewriter.html">NoteWriter</a></li>
-          <li><a href="contact.html">Контакти</a></li>
-          <li><a href="profile/profile.html">Профіль</a></li>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Musicageddon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories/chords.html">Аккорди</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories/scales.html">Гами</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tools/notewriter.html">NoteWriter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Контакти</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile/profile.html">Профіль</a>
+          </li>
         </ul>
       </nav>
 
       <h1>Musicageddon</h1>
       <p><strong>Платформа</strong> для вивчення теорії музики</p>
     </header>
-    <main> 
-    <form action="">
-      <label for="ftitle">write title</label></br>
-      <input type="text" id="ftitle" /></br>
-      <label for="fproblem">write problem</label></br>
-      <input type="text" id="fproblem" /></br>
-      <a href="index.html"><input type="button" id="fsend" value="send"></a>
-    </form>
+    <main class="main">
+      <section class="section">
+        <form class="form" action="">
+          <label class="form_label" for="ftitle">write title</label><br />
+          <input class="form_input" type="text" id="ftitle" /><br />
+          <label class="form_label" for="fproblem">write problem</label><br />
+          <input class="form_input" type="text" id="fproblem" /><br />
+          <button class="btn btn_primary" type="submit">Зберегти</button>
+          <button class="btn btn_secondary" type="reset">Очистити</button>
+        </form>
+      </section>
     </main>
-    <footer>
+    <footer class="footer">
       <p>© 2026 Musicageddon</p>
     </footer>
   </body>

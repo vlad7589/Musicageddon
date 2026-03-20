@@ -2,74 +2,92 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Musicageddon</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Musicageddon</a></li>
-          <li><a href="chords.html">Аккорди</a></li>
-          <li><a href="scales.html">Гами</a></li>
-          <li><a href="../tools/notewriter.html">NoteWriter</a></li>
-          <li><a href="../contact.html">Контакти</a></li>
-          <li><a href="../profile/profile.html">Профіль</a></li>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Musicageddon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../categories/chords.html">Аккорди</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../categories/scales.html">Гами</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../tools/notewriter.html">NoteWriter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact.html">Контакти</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../profile/profile.html">Профіль</a>
+          </li>
         </ul>
       </nav>
 
       <h1>Musicageddon</h1>
       <p><strong>Платформа</strong> для вивчення теорії музики</p>
     </header>
-    <main>
-      <section>
-        <h2>Типи акордів</h2>
+    <main class="main chords">
+      <section class="section">
+        <h2 class="section_title">Типи акордів</h2>
 
-        <ul>
-          <li>Мажорні</li>
-          <li>Мінорні</li>
-          <li>Септакорди</li>
-          <li>Зменшені</li>
+        <ul class="list">
+          <li class="list_item">Мажорні</li>
+          <li class="list_item">Мінорні</li>
+          <li class="list_item">Септакорди</li>
+          <li class="list_item">Зменшені</li>
         </ul>
       </section>
 
-      <section>
-        <h2>Таблиця акордів</h2>
+      <section class="section">
+        <h2 class="section_title">Таблиця акордів</h2>
 
-        <table border="1">
-          <tr>
-            <th>Акорд</th>
-            <th>Тип</th>
-            <th>Ноти</th>
+        <table class="table">
+          <tr class="table_head">
+            <th class="table_head_cell">Акорд</th>
+            <th class="table_head_cell">Тип</th>
+            <th class="table_head_cell">Ноти</th>
           </tr>
 
-          <tr>
-            <td>C</td>
-            <td>Мажор</td>
-            <td>C E G</td>
+          <tr class="table_row">
+            <td class="table_cell">C</td>
+            <td class="table_cell">Мажор</td>
+            <td class="table_cell">C E G</td>
           </tr>
 
-          <tr>
-            <td>Am</td>
-            <td>Мінор</td>
-            <td>A C E</td>
+          <tr class="table_row">
+            <td class="table_cell">Am</td>
+            <td class="table_cell">Мінор</td>
+            <td class="table_cell">A C E</td>
           </tr>
 
-          <tr>
-            <td>G7</td>
-            <td>Септакорд</td>
-            <td>G B D F</td>
+          <tr class="table_row">
+            <td class="table_cell">G7</td>
+            <td class="table_cell">Септакорд</td>
+            <td class="table_cell">G B D F</td>
           </tr>
         </table>
       </section>
 
-      <section>
-        <h2>Схема акорду</h2>
+      <section class="section">
+        <h2 class="section_title">Схема акорду</h2>
 
-        <img src="../resources/OWD_G_major.jpg" width="200" alt="G major" />
+        <img
+          class="media"
+          src="../resources/OWD_G_major.jpg"
+          width="200"
+          alt="G major"
+        />
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <p>© 2026 Musicageddon</p>
     </footer>
   </body>

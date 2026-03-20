@@ -2,96 +2,123 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Musicageddon</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Musicageddon</a></li>
-          <li><a href="../categories/chords.html">Аккорди</a></li>
-          <li><a href="../categories/scales.html">Гами</a></li>
-          <li><a href="../tools/notewriter.html">NoteWriter</a></li>
-          <li><a href="../contact.html">Контакти</a></li>
-          <li><a href="profile.html">Профіль</a></li>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Musicageddon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../categories/chords.html">Аккорди</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../categories/scales.html">Гами</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../tools/notewriter.html">NoteWriter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact.html">Контакти</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../profile/profile.html">Профіль</a>
+          </li>
         </ul>
       </nav>
 
       <h1>Musicageddon</h1>
       <p><strong>Платформа</strong> для вивчення теорії музики</p>
     </header>
-    <main>
-      <main>
-        <section>
-          <h2>Інформація про користувача</h2>
+    <main class="main">
+      <section class="section">
+        <h2 class="section_title">Інформація про користувача</h2>
 
-          <img
-            src="../resources/OWD_Dave_Mustaine.webp"
-            width="150"
-            alt="User profile photo"
-          />
+        <img
+          class="profile_photo"
+          src="../resources/OWD_Dave_Mustaine.webp"
+          width="150"
+          alt="User profile photo"
+        />
+        <div class="profile_info">
+          <p class="section_text">
+            <strong>Ім'я:</strong> Користувач Musicageddon
+          </p>
+          <p class="section_text"><strong>Рівень:</strong> Професіонал</p>
+          <p class="section_text">
+            <strong>Улюблений інструмент:</strong> Гітара
+          </p>
+        </div>
+      </section>
 
-          <p><strong>Ім'я:</strong> Користувач Musicageddon</p>
-          <p><strong>Рівень:</strong> Професіонал</p>
-          <p><strong>Улюблений інструмент:</strong> Гітара</p>
-        </section>
+      <section class="section">
+        <h2 class="section_title">Мої навички</h2>
 
-        <section>
-          <h2>Мої навички</h2>
+        <ul class="list">
+          <li class="list_item">Гра акордами</li>
+          <li class="list_item">Імпровізація</li>
+          <li class="list_item">Робота з табулатурами</li>
+          <li class="list_item">Музична теорія</li>
+        </ul>
+      </section>
 
-          <ul>
-            <li>Гра акордами</li>
-            <li>Імпровізація</li>
-            <li>Робота з табулатурами</li>
-            <li>Музична теорія</li>
-          </ul>
-        </section>
+      <section class="section">
+        <h2 class="section_title">Мої композиції</h2>
 
-        <section>
-          <h2>Мої композиції</h2>
+        <table class="table">
+          <tr class="table_head">
+            <th class="table_head_cell">Назва</th>
+            <th class="table_head_cell">Жанр</th>
+            <th class="table_head_cell">Дата створення</th>
+          </tr>
 
-          <table border="1">
-            <tr>
-              <th>Назва</th>
-              <th>Жанр</th>
-              <th>Дата створення</th>
-            </tr>
+          <tr class="table_row">
+            <td class="table_cell">Megadeth</td>
+            <td class="table_cell">Metal</td>
+            <td class="table_cell">2026</td>
+          </tr>
 
-            <tr>
-              <td>Megadeth</td>
-              <td>Metal</td>
-              <td>2026</td>
-            </tr>
+          <tr class="table_row">
+            <td class="table_cell">Rust in Peace</td>
+            <td class="table_cell">Metal</td>
+            <td class="table_cell">1990</td>
+          </tr>
+        </table>
+      </section>
 
-            <tr>
-              <td>Rust in Peace</td>
-              <td>Metal</td>
-              <td>1990</td>
-            </tr>
-          </table>
-        </section>
+      <section class="section">
+        <h2 class="section_title">Редагувати профіль</h2>
 
-        <section>
-          <h2>Редагувати профіль</h2>
+        <form class="form">
+          <label class="form_label">Ім'я</label><br />
+          <input class="form_input" title="name" type="text" /><br /><br />
 
-          <form>
-            <label>Ім'я</label><br />
-            <input title="name" type="text" /><br /><br />
+          <label class="form_label">Улюблений інструмент</label><br />
+          <input
+            class="form_input"
+            title="instrument"
+            type="text"
+          /><br /><br />
 
-            <label>Улюблений інструмент</label><br />
-            <input title="instrument" type="text" /><br /><br />
+          <label class="form_label">Коротко про себе</label><br />
+          <textarea
+            class="form_textarea"
+            title="about"
+            rows="5"
+            cols="40"
+          ></textarea
+          ><br /><br />
 
-            <label>Коротко про себе</label><br />
-            <textarea title="about" rows="5" cols="40"></textarea><br /><br />
-
-            <button type="submit">Зберегти</button>
-            <button type="reset">Очистити</button>
-          </form>
-        </section>
-      </main>
+          <button class="btn btn_primary" type="submit">Зберегти</button>
+          <button class="btn btn_secondary" type="reset">Очистити</button>
+        </form>
+      </section>
     </main>
-    <footer>
+    <footer class="footer">
       <p>© 2026 Musicageddon</p>
     </footer>
   </body>

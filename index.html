@@ -3,18 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
     <title>Musicageddon</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Musicageddon</a></li>
-          <li><a href="categories/chords.html">Аккорди</a></li>
-          <li><a href="categories/scales.html">Гами</a></li>
-          <li><a href="tools/notewriter.html">NoteWriter</a></li>
-          <li><a href="contact.html">Контакти</a></li>
-          <li><a href="profile/profile.html">Профіль</a></li>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Musicageddon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories/chords.html">Аккорди</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories/scales.html">Гами</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tools/notewriter.html">NoteWriter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Контакти</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile/profile.html">Профіль</a>
+          </li>
         </ul>
       </nav>
 
@@ -22,54 +35,60 @@
       <p><strong>Платформа</strong> для вивчення теорії музики</p>
     </header>
 
-    <main>
-      <section>
-        <h2>Про сайт</h2>
+    <main class="main">
+      <section class="section">
+        <h2 class="section_title">Про сайт</h2>
 
-        <p>
+        <p class="section_text">
           Сайт <em>Musicageddon</em> призначений для навчання музики, перегляду
           акордів, гам та створення власних музичних композицій.
         </p>
 
-        <p>
+        <p class="section_text">
           Користувачі можуть вивчати теорію, слухати приклади та використовувати
           <strong>інтерактивні музичні інструменти</strong>.
         </p>
       </section>
       <audio src="resources/nokia-phone-ringtone-famous.mp3" controls></audio>
-      <section>
-        <h2>Можливості сайту</h2>
+      <section class="section">
+        <h2 class="section_title">Можливості сайту</h2>
 
-        <ul>
-          <li>Вивчення акордів</li>
-          <li>Навчання гамам</li>
-          <li>Створення нот і табів</li>
-          <li>Збереження власних композицій</li>
+        <ul class="list">
+          <li class="list_item">Вивчення акордів</li>
+          <li class="list_item">Навчання гамам</li>
+          <li class="list_item">Створення нот і табів</li>
+          <li class="list_item">Збереження власних композицій</li>
         </ul>
       </section>
 
-      <section>
-        <h2>Музичні інструменти</h2>
+      <section class="section">
+        <h2 class="section_title">Музичні інструменти</h2>
 
         <img
+          class="media"
           src="resources/OWD_guitar.webp"
           width="200"
           height="300"
           alt="Guitar"
         />
-        <img src="resources/OWD_piano.webp" width="200" alt="Piano" />
+        <img
+          class="media"
+          src="resources/OWD_piano.webp"
+          width="200"
+          alt="Piano"
+        />
       </section>
 
-      <section>
-        <h2>Огляд можливостей</h2>
+      <section class="section">
+        <h2 class="section_title">Огляд можливостей</h2>
 
-        <video width="320" height="240" controls>
+        <video class="media_video" width="320" height="240" controls>
           <source src="resources/OWD_guitar_video_Darrel.mp4" />
         </video>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>© 2026 Musicageddon</p>
     </footer>
   </body>
